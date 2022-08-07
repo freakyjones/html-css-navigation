@@ -194,6 +194,7 @@ li a {
 .navbar-buttons>button:nth-of-type(1) {
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 .navbar-buttons>button:nth-of-type(2) {
@@ -284,6 +285,8 @@ li a {
         grid-column: 1/2;
         width: 100%;
         max-width: 6rem;
+        min-width: 5rem;
+        margin-top: 0.5rem;
     }
 
     .navbar-slider {
@@ -297,6 +300,10 @@ li a {
         grid-column: 2/12;
     }
 
+    .navbar-slider[data-visibility="false"] {
+        transform: none;
+    }
+
     .navbar-nav {
         display: flex;
         flex-direction: row;
@@ -308,6 +315,7 @@ li a {
     .navbar-buttons {
         display: flex;
         margin-top: 0;
+        cursor: pointer;
     }
 
     .hero-container {
