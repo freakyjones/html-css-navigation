@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <title>intro-section-with-dropdown</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-items-container">
+            <figure class="navbar-brand">
+                <img src="./assets/images/logo.svg" alt="logo" />
+            </figure>
+            <button aria-controls="navbar-slider" aria-expanded="false" class="mobile-nav-toggle"><span></span></button>
+            <div class="navbar-slider-cover" aria-visible="false"></div>
+            <div id="navbar-slider" data-visibility="false" class="navbar-slider">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Features </a>
+                        <button aria-controls="features-list" aria-expanded="false"
+                            class="feature-list-button"><span></span></button>
+                        <ul id="features-list" data-visible="false" class="features-list">
+                            <li class="features-list-item">
+                                <div><img src="./assets/images/icon-todo.svg" alt="Todo"></div>
+                                <p>Todo List</p>
+                            </li>
+                            <li class="features-list-item">
+                                <div><img src="./assets/images/icon-calendar.svg" alt="calendar"></div>
+                                <p>Calendar</p>
+                            </li>
+                            <li class="features-list-item">
+                                <div><img src="./assets/images/icon-reminders.svg" alt="reminder"></div>
+                                <p>Remindar</p>
+                            </li>
+                            <li class="features-list-item">
+                                <div><img src="./assets/images/icon-planning.svg" alt="planing"></div>
+                                <p>Planing</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Company</a>
+                        <button aria-controls="company-list" aria-expanded="false"
+                            class="company-list-button"><span></span></button>
+                        <ul id="company-list" data-visible="false" class="company-list">
+                            <li class="company-list-item">History</li>
+                            <li class="company-list-item">Our Team</li>
+                            <li class="company-list-item">Blog</li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Carrers</a>
+
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">About</a>
+                    </li>
+                </ul>
+                <div class="navbar-buttons">
+                    <button> Login</button>
+                    <button>Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-container">
+                    <div class="hero-text">
+                        <h1>Make remote work</h1>
+                        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals,
+                            and
+                            watch productivity soar.</p>
+                        <button class="hero-text-button">Learn more</button>
+                        <div class="hero-text-client">
+                            <div>
+                                <img src="./assets/images/client-databiz.svg" alt="data-biz" />
+                            </div>
+                            <div>
+                                <img src="./assets/images/client-audiophile.svg" alt="audio-phile" />
+                            </div>
+                            <div>
+                                <img src="./assets/images/client-meet.svg" alt="client-meet" />
+                            </div>
+                            <div>
+                                <img src="./assets/images/client-maker.svg" alt="clinet-maker" />
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="hero-img-mobile">
+                        <img src="./assets/images/image-hero-mobile.png" alt="hero-mobile">
+                    </figure>
+                    <figure class="hero-img-desktop">
+                        <img src="./assets/images/image-hero-desktop.png" alt="hero-mobile">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
